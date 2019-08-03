@@ -5,12 +5,79 @@ body {
   background-color: #024421;
 }
 
+.title1,
+.title2 {
+  text-align: center;
+}
+
+.title2 {
+  font-size: 4em;
+  margin-top: 0;
+}
+h1,
+p {
+  font-family: 'Give You Glory', cursive;
+}
+
+h2 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
 .charlie {
   width: 100%;
   max-width: 400px;
   position: fixed;
   bottom: 0px;
   margin-left: -10px;
+}
+
+.yellow {
+  padding: 20px;
+  background-color: #fade85;
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+
+}
+
+.red {
+  padding: 20px;
+  background-color: #990000;
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+}
+
+.blue {
+  padding: 20px;
+  background-color: #006699;
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+
+}
+
+.purple {
+  padding: 20px;
+  background-color: #666699;
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+
 }
 
 /*Fortune Movement Classes========================================*/
