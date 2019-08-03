@@ -1,0 +1,14 @@
+body {
+  background-image: url('images/fortuneBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #024421;
+}
+
+.charlie {
+  width: 100%;
+  max-width: 400px;
+  position: fixed;
+  bottom: 0px;
+  margin-left: -10px;
+}
