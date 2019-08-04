@@ -9,9 +9,9 @@ function loopThroughLeft() {
 
   for(let i = 0; i < this.textContent.length * 2; i++) {
     if([0, 1, 4, 5, 8, 9, 12, 13, 16, 17, 20, 21, 24, 25, 28, 29, 32, 33].indexOf(i) > -1) {
-      setTimeout(fortuneTransition, i * 1000);
+      setTimeout(fortuneTransition, i * 500);
     } else {
-      setTimeout(fortuneTransitionTwo, i * 1000);
+      setTimeout(fortuneTransitionTwo, i * 500);
     }
   };
 };
@@ -24,9 +24,9 @@ function loopThroughRight() {
 
   for(let i = 0; i < this.textContent.length * 2; i++) {
     if([0, 1, 4, 5, 8, 9, 12, 13, 16, 17, 20, 21, 24, 25, 28, 29, 32, 33].indexOf(i) > -1) {
-      setTimeout(fortuneTransitionThree, i * 1000);
+      setTimeout(fortuneTransitionThree, i * 500);
     } else {
-      setTimeout(fortuneTransitionFour, i * 1000);
+      setTimeout(fortuneTransitionFour, i * 500);
     }
   };
 };
