@@ -1,5 +1,5 @@
-const leftBoxes = document.getElementsByClassName('left')
-const rightBoxes = document.getElementsByClassName('right')
+const leftBoxes = document.getElementsByClassName('left');
+const rightBoxes = document.getElementsByClassName('right');
 
 //Left Fortune Boxes
 function loopThroughLeft() {
@@ -16,7 +16,7 @@ function loopThroughLeft() {
   };
 };
 
-//Right Fortune Boxes
+  //Right Fortune Boxes
 function loopThroughRight() {
 
   const fortuneTransitionThree = () => this.classList.toggle('scale-down-center');
@@ -30,6 +30,7 @@ function loopThroughRight() {
     }
   };
 };
+
 
 //Event Listener for Left Fortune Boxes
 
