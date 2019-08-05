@@ -1,8 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
 body {
   background-image: url('images/fortuneBackground.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #024421;
+}
+
+.hide {
+  display: none;
 }
 
 .title1,
@@ -48,7 +62,7 @@ h2 {
   font-size: 3rem;
   width: 150px;
   text-align: center;
-
+  margin: 2%;
 }
 
 .red {
@@ -58,6 +72,7 @@ h2 {
   font-size: 3rem;
   width: 150px;
   text-align: center;
+  margin: 2%;
 }
 
 .blue {
@@ -68,6 +83,7 @@ h2 {
   width: 150px;
   text-align: center;
   margin-top: -20px;
+  margin: 2%;
 }
 
 .purple {
@@ -78,6 +94,7 @@ h2 {
   width: 150px;
   text-align: center;
   margin-top: -20px;
+  margin: 2%;
 }
 
 #placeholder {

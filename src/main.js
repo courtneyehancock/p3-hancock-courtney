@@ -43,3 +43,21 @@ for(let i = 0; i < leftBoxes.length; i++) {
 for(let i = 0; i < rightBoxes.length; i++) {
   rightBoxes[i].addEventListener('click', loopThroughRight);
 };
+
+//Fortunes
+const messageWrapper = document.getElementById('fortune');
+
+const messageItems = ['You look like you need a treat!', '', '', '', '', '', '', '', '', ''];
+
+const messageSection = document.querySelector('section.hide');
+
+const getRandomMessage = function () {
+  messageItems.sort(() => 0.5 - Math.random());
+  return messageItems[0];
+};
+
+function displayMessage() {
+  messageWrapper.innerHTML = getRandomMessage();
+  messageSection.classList.remove('hide');
+  messageSection.classList.add('message');
+}
