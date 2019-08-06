@@ -90,8 +90,8 @@ function displayMessage() {
   messageWrapper.innerHTML = getRandomMessage();
   messageSection.classList.remove('hide');
   messageSection.classList.add('message');
-}*/
+}
 
-for(let i = 0; i < myBoxes.length; i++) {
+for (let i = 0; i < thirdBoxes.length; i++) {
   thirdBoxes[i].addEventListener('click', displayMessage);
 };

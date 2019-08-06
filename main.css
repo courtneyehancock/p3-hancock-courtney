@@ -15,6 +15,10 @@ body {
   background-color: #024421;
 }
 
+main {
+  margin: 5%;
+}
+
 .hide {
   display: none;
 }
@@ -99,13 +103,24 @@ h2 {
 
 #fortune {
   text-align: center;
-  transition: 1s;
   padding: 20px;
   background-color: #800020;
   color: white;
   font-family: 'Luckiest Guy', cursive;
+  margin: 5%;
 }
 
+.message {
+	background-color:#D5D717;
+	color: #A32857;
+	padding: 50px;
+	font-family: 'Libre Baskerville';
+		overflow-y: hidden;
+		max-height: 500px;
+		transition-property: all;
+		transition-duration: 1s;
+		transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
 
 
 /*Fortune Movement Classes========================================*/
