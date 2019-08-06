@@ -77,7 +77,7 @@ for(let i = 0; i < rightBoxes.length; i++) {
 //Fortunes
 const messageWrapper = document.getElementById('fortune');
 
-const messageItems = ['You look like you need a treat!', 'The fortune you seek is in another cookie.', 'Oops... cant think of anything, try again later.', 'I foresee lots of pets in your future.', 'Youre a good dog.', 'Your lucky numbers are 6, 42, 8, 27, 24, 56', 'You look like Charlie needs a treat', 'Laugh long, loud and often, and with a dog.', 'Stay positive and give treats to others.', 'Cherish your loved ones.'];
+const messageItems = ['You look like you need a treat!', 'Take a walk.', 'Try again later.', 'Stay Pawsitive!', 'Youre a good dog.', 'Your lucky numbers are 6, 42, 8, 27, 24, 56', 'You look like Charlie needs a treat', 'Laugh often, and with a dog.', 'Give treats to others.', 'Cherish your loved ones.'];
 
 const messageSection = document.querySelector('section.hide');
 

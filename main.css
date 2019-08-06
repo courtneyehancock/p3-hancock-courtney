@@ -111,15 +111,17 @@ h2 {
 }
 
 .message {
-	background-color:#D5D717;
-	color: #A32857;
-	padding: 50px;
-	font-family: 'Libre Baskerville';
+  background-color: #800020;
+  color: white;
+  text-align: center;
+	padding: 20px;
+  font-size: 2rem;
+	font-family: 'Luckiest Guy' cursive;
+  margin: 5%;
 		overflow-y: hidden;
 		max-height: 500px;
 		transition-property: all;
-		transition-duration: 1s;
-		transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+		transition-duration: 2s;
 }
 
 
