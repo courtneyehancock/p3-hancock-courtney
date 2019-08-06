@@ -1,5 +1,9 @@
 const leftBoxes = document.getElementsByClassName('left');
 const rightBoxes = document.getElementsByClassName('right');
+const firstBoxes = document.getElementsByClassName('first');
+const secondBoxes = document.getElementsByClassName('second');
+const thirdBoxes = document.getElementsByClassName('third');
+const myBoxes = document.getElementsByClassName('block');
 
 //Left Fortune Boxes
 function loopThroughLeft() {
@@ -31,14 +35,40 @@ function loopThroughRight() {
   };
 };
 
+//box change
+function boxChange() {
+  const change = () => {
+    for (let i = 0; i < leftBoxes.length; i++) {
+      firstBoxes[i].classList.add('hide');
+      secondBoxes[i].classList.remove('hide');
+    }
+  };
+  setTimeout(change, this.textContent.length * 1000);
+};
 
-//Event Listener for Left Fortune Boxes
+function boxChangeTwo() {
+  const changeTwo = () => {
+    for (let i = 0; i < myBoxes.length; i++) {
+      secondBoxes[i].classList.add('hide');
+      thirdBoxes[i].classList.remove('hide');
+    }
+  };
+  setTimeout(changeTwo, this.textContent.length * 1000);
+};
+
+//Event Listeners
+
+for (let i = 0; i < firstBoxes.length; i++) {
+  firstBoxes[i].addEventListener('click', boxChange);
+};
+
+for (let i = 0; i < secondBoxes.length; i++) {
+  secondBoxes[i].addEventListener('click', boxChangeTwo);
+};
 
 for(let i = 0; i < leftBoxes.length; i++) {
   leftBoxes[i].addEventListener('click', loopThroughLeft);
 };
-
-//Event Listener for Right Fortune Boxes
 
 for(let i = 0; i < rightBoxes.length; i++) {
   rightBoxes[i].addEventListener('click', loopThroughRight);
@@ -47,7 +77,7 @@ for(let i = 0; i < rightBoxes.length; i++) {
 //Fortunes
 const messageWrapper = document.getElementById('fortune');
 
-const messageItems = ['You look like you need a treat!', '', '', '', '', '', '', '', '', ''];
+const messageItems = ['You look like you need a treat!', 'The fortune you seek is in another cookie.', 'Oops... cant think of anything, try again later.', 'I foresee lots of pets in your future.', 'Youre a good dog.', 'Your lucky numbers are 6, 42, 8, 27, 24, 56', 'You look like Charlie needs a treat', 'Laugh long, loud and often, and with a dog.', 'Stay positive and give treats to others.', 'Cherish your loved ones.'];
 
 const messageSection = document.querySelector('section.hide');
 
@@ -60,4 +90,8 @@ function displayMessage() {
   messageWrapper.innerHTML = getRandomMessage();
   messageSection.classList.remove('hide');
   messageSection.classList.add('message');
-}
+}*/
+
+for(let i = 0; i < myBoxes.length; i++) {
+  thirdBoxes[i].addEventListener('click', displayMessage);
+};

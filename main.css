@@ -97,9 +97,15 @@ h2 {
   margin: 2%;
 }
 
-#placeholder {
-    text-align: center;
+#fortune {
+  text-align: center;
+  transition: 1s;
+  padding: 20px;
+  background-color: #800020;
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
 }
+
 
 
 /*Fortune Movement Classes========================================*/
